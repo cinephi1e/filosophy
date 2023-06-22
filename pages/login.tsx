@@ -1,4 +1,5 @@
 import Layout from "@/components/common/Layout";
+import Link from "next/link";
 import React from "react";
 
 const login = () => {
@@ -6,13 +7,16 @@ const login = () => {
     <Layout>
       <div className="w-[60%] h-auto mx-auto mt-20 bg-white border-black flex flex-col justify-center">
         {/* 로그인/회원가입 분류 */}
-        <div className="h-14 flex justify-between items-center">
-          <button className="w-full h-full text-center border-4 border-r-0 border-l-0 border-b-0 border-black">
-            <h3 className="text-2xl font-semibold ">로그인</h3>
+        <div className="h-14 flex">
+          <button className="w-full h-full text-center border-4 border-r-0 border-l-0 border-b-0 border-black text-2xl font-semibold">
+            로그인
           </button>
-          <button className="w-full h-full text-center border border-gray-300">
-            <h3 className="text-2xl font-semibold">회원가입</h3>
-          </button>
+          <Link
+            href="signup"
+            className="flex items-center justify-center w-full h-full text-center text-2xl font-semibold border border-gray-300"
+          >
+            회원가입
+          </Link>
         </div>
         {/* 이메일/비밀번호 로그인 */}
         <form className="p-20 pb-10">
@@ -50,7 +54,7 @@ const login = () => {
             />
             <span className="font-semibold mx-auto">구글 로그인</span>
           </button>
-          <button className="w-full h-12 border rounded-sm bg-[#02c73c] flex items-center px-2 my-4">
+          <button className="w-full h-12 border rounded-sm bg-[#02c73c] flex items-center px-2 my-4 overflow-hidden">
             <img
               src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1504499304/in36bktetqoapibgeabo.png"
               className="w-[11%] -mr-10"
@@ -59,7 +63,7 @@ const login = () => {
               네이버 로그인
             </span>
           </button>
-          <button className="w-full h-12 border rounded-sm bg-[#fddc3f] flex items-center px-2">
+          <button className="w-full h-12 border rounded-sm bg-[#fddc3f] flex items-center px-2 overflow-hidden">
             <img
               src="https://cdn.imweb.me/thumbnail/20220403/a8e484f2dfe39.png"
               className="w-[11%] -mr-10"
