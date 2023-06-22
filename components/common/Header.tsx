@@ -8,10 +8,10 @@ const Header = () => {
         <Link href="/" className="text-bold text-3xl">
           filosophy
         </Link>
-        <nav className="w-60 h-full flex justify-end items-center">
-          <Link href="/">로그인</Link>
-          <Link href="/">마이페이지</Link>
-          <Link href="/">로그아웃</Link>
+        <nav className="w-32 h-full flex items-center">
+          <Link href="/login">로그인</Link>
+          {/* <Link href="/">마이페이지</Link> */}
+          {/* <Link href="/">로그아웃</Link> */}
         </nav>
       </div>
     </header>
